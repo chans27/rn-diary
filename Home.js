@@ -5,8 +5,7 @@ import {Ionicons} from "@expo/vector-icons";
 
 const View = styled.View`
   flex: 1;
-  padding: 0 50px;
-  padding-top: 100px;
+  padding: 100px 0 0 30px;
   background-color: ${colors.bgColor};
 `;
 const Title = styled.Text`
@@ -33,7 +32,7 @@ const BtnText = styled.Text`
 
 const Home = ({ navigation: { navigate } }) => (
   <View>
-    <Title>My journal</Title>
+    <Title>My journal!</Title>
     <Btn onPress={() => navigate("Write") } >
       <Ionicons name="add" color="white" size={40} />
     </Btn>
